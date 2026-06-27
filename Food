@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food — EEM Knowledge</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --orange: #D4622A; --orange-light: #E8855A; --orange-pale: #FFF4EC; --dark: #2E2E2E; --muted: #666666; --border: #DDDDDD; --bg: #FFFFFF; --cream: #F9F9F9; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', Arial, sans-serif; background: var(--bg); color: var(--dark); min-height: 100vh; display: flex; flex-direction: column; }
+  body::before { content: ''; display: block; height: 4px; background: var(--orange); flex-shrink: 0; }
+  .document { max-width: 860px; width: calc(100% - 2rem); margin: 0 auto; flex: 1; display: flex; flex-direction: column; }
+  .back-nav { padding: 0.85rem 0 0; }
+  .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); text-decoration: none; -webkit-tap-highlight-color: transparent; }
+  .back-link:active { color: var(--orange); }
+  .header { padding: 1.25rem 0 1.5rem; border-bottom: 3px solid var(--orange); }
+  .eyebrow { font-size: 0.62rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2rem, 7vw, 3.2rem); font-weight: 700; line-height: 1.0; color: var(--orange); }
+  .header-sub { margin-top: 0.5rem; font-size: 0.8rem; font-weight: 300; color: var(--muted); }
+  .group { padding: 1.5rem 0 0; }
+  .group-label { font-size: 0.62rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.65rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+  .item-list { display: flex; flex-direction: column; }
+  .item-link { display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 0.5rem 0.85rem 1rem; text-decoration: none; color: var(--dark); border-bottom: 1px solid var(--border); border-left: 3px solid transparent; -webkit-tap-highlight-color: transparent; gap: 0.75rem; }
+  .item-link:last-child { border-bottom: none; }
+  .item-link:active { border-left-color: var(--orange); background: var(--orange-pale); }
+  .item-name { font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 700; color: var(--dark); line-height: 1.2; }
+  .item-meta { font-size: 0.72rem; font-weight: 300; color: var(--muted); margin-top: 0.15rem; }
+  .item-badge { font-size: 0.58rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.55rem; border-radius: 20px; white-space: nowrap; flex-shrink: 0; }
+  .badge-special { background: #FFF0CC; color: #7A5800; border: 1px solid #E8D090; }
+  .badge-veg { background: #E8F5EC; color: #1a5c35; border: 1px solid #a3d5ba; }
+  .badge-ref { background: var(--orange-pale); color: var(--orange); border: 1px solid rgba(212,98,42,0.25); }
+  .item-arrow { color: var(--border); font-size: 1.1rem; flex-shrink: 0; }
+  .footer { background: var(--cream); border-top: 1px solid var(--border); padding: 1rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 2rem; flex-shrink: 0; }
+  .footer-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+  .footer-note { font-size: 0.62rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; text-align: right; }
+  @media (max-width: 480px) { .footer { flex-direction: column; text-align: center; } .footer-note { text-align: center; } }
+</style>
+</head>
+<body>
+  <nav class="back-nav"><a href="/index.html" class="back-link">‹ &nbsp;EEM Knowledge</a></nav>
+    <main class="document">
+    nbsp;EEM Knowledge</a></nav>
+    <header class="header">
+      <div class="eyebrow">Section One</div>
+      <h1 class="header-title">Food</h1>
+      <p class="header-sub">Dish cards, ingredients, allergens, modifications, and the food glossary.</p>
+    </header>
+
+    <div class="group">
+      <div class="group-label">Get Started</div>
+      <div class="item-list">
+        <a href="beet-salad.html" class="item-link"><div><div class="item-name">Beet Salad</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+        <a href="field-greens-salad.html" class="item-link"><div><div class="item-name">Field Greens Salad</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+        <a href="thai-style-ceviche.html" class="item-link"><div><div class="item-name">Thai-Style Ceviche</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+        <a href="sweet-sour-fried-chicken.html" class="item-link"><div><div class="item-name">Sweet &amp; Sour Fried Chicken</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+        <a href="papaya-salad.html" class="item-link"><div><div class="item-name">Very Spicy Papaya Salad</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+        <a href="hot-fried-cauliflower.html" class="item-link"><div><div class="item-name">Hot Fried Cauliflower</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+        <a href="smoked-red-curry-sausage.html" class="item-link"><div><div class="item-name">Smoked Red Curry Sausage</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-label">From the Wok</div>
+      <div class="item-list">
+        <a href="wok-fried-yu-choy.html" class="item-link"><div><div class="item-name">Wok-Fried Yu Choy</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+        <a href="chopped-bbq-fried-rice.html" class="item-link"><div><div class="item-name">Chopped BBQ Fried Rice</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+        <a href="roasted-mushroom-fried-rice.html" class="item-link"><div><div class="item-name">Roasted Mushroom Fried Rice</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+        <a href="smoked-pork-krapao.html" class="item-link"><div><div class="item-name">Smoked Pork Krapao</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-label">Curries</div>
+      <div class="item-list">
+        <a href="white-curry.html" class="item-link"><div><div class="item-name">White Curry</div><div class="item-meta">Brisket burnt ends · allergens · modifications</div></div><div class="item-arrow">›</div></a>
+        <a href="jungle-curry.html" class="item-link"><div><div class="item-name">Spicy Jungle Curry</div><div class="item-meta">Sliced brisket · allergens · modifications</div></div><div class="item-arrow">›</div></a>
+        <a href="green-curry.html" class="item-link"><div><div class="item-name">Green Curry</div><div class="item-meta">Crispy pulled pork · no shrimp paste · allergens</div></div><div class="item-arrow">›</div></a>
+        <a href="red-curry.html" class="item-link"><div><div class="item-name">Red Curry</div><div class="item-meta">Roasted vegetables · allergens · modifications</div></div><div class="item-arrow">›</div></a>
+        <a href="massaman-curry.html" class="item-link"><div><div class="item-name">Massaman Curry</div><div class="item-meta">Smoked lamb shoulder · allergens · modifications</div></div><div class="item-arrow">›</div></a>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-label">Specials</div>
+      <div class="item-list">
+        <a href="pork-steak.html" class="item-link"><div><div class="item-name">Pork Steak</div><div class="item-meta">Allergens · modifications · ingredients</div></div><span class="item-badge badge-special">Tuesday</span><div class="item-arrow">›</div></a>
+        <a href="smoked-baby-back-ribs.html" class="item-link"><div><div class="item-name">Smoked Baby Back Ribs</div><div class="item-meta">Allergens · modifications · ingredients</div></div><span class="item-badge badge-special">Wednesday</span><div class="item-arrow">›</div></a>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-label">Dessert</div>
+      <div class="item-list">
+        <a href="coconut-panna-cotta.html" class="item-link"><div><div class="item-name">Coconut Panna Cotta</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+        <a href="pog-sherbet.html" class="item-link"><div><div class="item-name">POG Sherbet</div><div class="item-meta">Allergens · modifications · ingredients</div></div><div class="item-arrow">›</div></a>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-label">Reference</div>
+      <div class="item-list">
+        <a href="food-glossary.html" class="item-link"><div><div class="item-name">Food Ingredient Glossary</div><div class="item-meta">Full ingredient reference · searchable</div></div><span class="item-badge badge-ref">Reference</span><div class="item-arrow">›</div></a>
+      </div>
+    </div>
+
+    <div style="height: 1.5rem;"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer-logo">EEM</div>
+    <div class="footer-note">3808 N Williams Ave · Portland, Oregon</div>
+  </footer>
+</body>
+</html>
