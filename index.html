@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EEM Thai BBQ — Ninsom Knowledge</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --orange: #D4622A; --orange-light: #E8855A; --orange-pale: #FFF4EC; --dark: #2E2E2E; --muted: #666666; --border: #DDDDDD; --bg: #FFFFFF; --cream: #F9F9F9; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', Arial, sans-serif; background: var(--bg); color: var(--dark); min-height: 100vh; display: flex; flex-direction: column; }
+  body::before { content: ''; display: block; height: 4px; background: var(--orange); flex-shrink: 0; }
+  .document { max-width: 860px; width: calc(100% - 2rem); margin: 0 auto; flex: 1; display: flex; flex-direction: column; }
+  .back-nav { padding: 0.85rem 0 0; }
+  .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); text-decoration: none; -webkit-tap-highlight-color: transparent; }
+  .back-link:active { color: var(--orange); }
+  .header { text-align: center; padding: 1.75rem 1rem 1.5rem; border-bottom: 3px solid var(--orange); }
+  .eyebrow { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.75rem; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.2rem, 8vw, 3.8rem); font-weight: 700; line-height: 1.0; color: var(--orange); }
+  .header-title em { font-style: italic; }
+  .header-sub { margin-top: 0.5rem; font-size: 0.82rem; font-weight: 300; color: var(--muted); }
+  .sections { padding: 2rem 0; display: flex; flex-direction: column; gap: 1rem; flex: 1; }
+  .section-card { display: block; text-decoration: none; background: var(--bg); border: 1px solid var(--border); border-left: 4px solid var(--orange); border-radius: 0 10px 10px 0; -webkit-tap-highlight-color: transparent; }
+  .section-card:active { background: var(--orange-pale); }
+  .section-inner { padding: 1.5rem 1.5rem 1.5rem 1.75rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .section-name { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.8rem, 5vw, 2.4rem); font-weight: 700; color: var(--orange); line-height: 1.05; }
+  .section-name em { font-style: italic; }
+  .section-kicker { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.3rem; }
+  .section-desc { margin-top: 0.4rem; font-size: 0.8rem; font-weight: 300; color: var(--muted); line-height: 1.55; }
+  .section-tags { margin-top: 0.65rem; display: flex; flex-wrap: wrap; gap: 0.3rem; }
+  .tag { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--orange); background: var(--orange-pale); border: 1px solid rgba(212,98,42,0.2); border-radius: 20px; padding: 0.22rem 0.6rem; }
+  .section-arrow { font-size: 1.5rem; color: var(--border); flex-shrink: 0; }
+  .philosophy { margin: 0 0 2rem; padding: 1rem 1.25rem; background: var(--orange-pale); border-left: 3px solid var(--orange); border-radius: 0 6px 6px 0; font-size: 0.82rem; font-weight: 300; color: #7A3010; line-height: 1.75; font-style: italic; }
+  .footer { background: var(--cream); border-top: 1px solid var(--border); padding: 1rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-shrink: 0; }
+  .footer-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+  .footer-note { font-size: 0.62rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; text-align: right; }
+  @media (max-width: 480px) { .section-inner { padding: 1.25rem 1rem 1.25rem 1.25rem; } .footer { flex-direction: column; text-align: center; } .footer-note { text-align: center; } }
+</style>
+</head>
+<body>
+  <main class="document">
+    <nav class="back-nav">
+      <a href="../index.html" class="back-link">‹ &nbsp;Ninsom Knowledge</a>
+    </nav>
+    <header class="header">
+      <div class="eyebrow">3808 N Williams Ave · Portland, Oregon</div>
+      <h1 class="header-title">EEM <em>Thai BBQ</em></h1>
+      <p class="header-sub">Staff reference · education · service tools</p>
+    </header>
+
+    <section class="sections">
+      <a href="food/index.html" class="section-card">
+        <div class="section-inner">
+          <div>
+            <div class="section-kicker">Section One</div>
+            <div class="section-name">Food</div>
+            <p class="section-desc">Dish cards, ingredients, allergens, modifications, and the food glossary.</p>
+            <div class="section-tags">
+              <span class="tag">Dishes</span>
+              <span class="tag">Food Glossary</span>
+            </div>
+          </div>
+          <div class="section-arrow">›</div>
+        </div>
+      </a>
+
+      <a href="beverage/index.html" class="section-card">
+        <div class="section-inner">
+          <div>
+            <div class="section-kicker">Section Two</div>
+            <div class="section-name">Beverage</div>
+            <p class="section-desc">Cocktails, spirit education, the full spirit list, bar glossary, and cocktail search.</p>
+            <div class="section-tags">
+              <span class="tag">Cocktails</span>
+              <span class="tag">Spirit 101s</span>
+              <span class="tag">Spirit List</span>
+              <span class="tag">Bar Glossary</span>
+              <span class="tag">Search</span>
+            </div>
+          </div>
+          <div class="section-arrow">›</div>
+        </div>
+      </a>
+    </section>
+
+    <p class="philosophy">"Let's make it easier to be here."</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">EEM</div>
+    <div class="footer-note">Ninsom Restaurant Group · Portland, Oregon</div>
+  </footer>
+</body>
+</html>
